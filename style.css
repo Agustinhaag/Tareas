@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    background-image: url(img/peli.jpg);
+    background-size: cover;
+    background-attachment:fixed ;
+}
+.complete{
+    text-decoration: line-through;
+}
+main{
+border-radius: 15px;
+    display: flex;
+    justify-content: center;
+   height: 100%;
+   margin-top: 5%;
+   width: 63%;
+   background: rgba(27, 27, 27, 0.726);
+}
+main .container{
+    width: 100%;
+  text-align: center;
+}
+main .container .title{
+    text-align: center;
+    font-size: 25px;
+    color: aliceblue;
+    margin-bottom: 5%;
+    padding-top: 5%;
+}
+main .container .title h1{
+    border-bottom: 1px solid rgb(81, 177, 194) ;
+    width: 150px;
+    margin: 0 auto;
+}
+main .container form{
+    width: 60%;
+    margin: 0 auto 3% auto;
+}
+main .container form input{
+    width: 70%;
+    outline: none;
+    background: none;
+    color: aliceblue;
+    border: none;
+    border-bottom:1px solid rgb(81, 177, 194);
+    padding-bottom: 3px;
+}
+
+main .container form input::placeholder{
+    color: aliceblue;
+}
+main .container form button{
+    border: 1px solid rgb(81, 177, 194);
+    background:none ;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 5px;
+    order: 2;
+}
+main .container form button:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(81, 177, 194);
+}
+table{
+    margin: 0 auto 10% auto;
+    width: 60%;
+    min-width: 200px;
+}
+table tr #td{
+    text-align: center;
+    color: white;
+}
+table tr td{
+    padding: 3px 0;
+}
+table tr .buttons{
+    width: 50%;
+    min-width: 160px;
+}
+table tr .buttons button{
+    padding: 8px 8px;
+    font-size: 11px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: none;
+}
+.btn-complete{
+    border: 1px solid rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+    
+}
+.btn-complete:hover{
+    background: rgb(0, 255, 0);
+    color: white;
+}
+.btn-delete{
+    border: 1px solid rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+}
+.btn-delete:hover{
+    background: rgb(255, 0, 0);
+    color: white;
+}
+.btn-edit{
+    border:1px solid rgb(0, 38, 255);
+    color: rgb(0, 38, 255);
+}
+.btn-edit:hover{
+    background: rgb(0, 38, 255);
+    color: white;
+}
+
+@media (max-width:600px) {
+  main{
+    height: 100%;
+    position: relative;
+    padding-bottom: 10px;
+  }
+    main .container form{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    main .container form input{
+        margin-bottom: 10px;
+        width: 95%;
+    }
+    main .container form  button{
+        margin: 25px 0 10px 0;
+        width: 100%;
+    }
+    table tr{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    main .container table tbody tr .buttons{
+        width: 100%;
+    }
+    main .container table tbody tr td button{
+        width: 31%;
+        text-align: center;
+    }
+}
+@media (max-width:350px){
+    main .container .title{
+        margin-bottom: 20px;
+    }
+    main .container form button{
+        margin-top: 35px;
+    }
+    main .container table{
+        min-width: 100px;
+    }
+    main .container table tr .buttons{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    main .container table tbody tr td button{
+        width: 80%;
+        margin: 0 auto 10px auto;
+    }
+}
+
+main form .inputerror small{
+    display: block;
+    color: red;
+}
