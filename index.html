@@ -10,14 +10,18 @@
 <body>
   <main>
       <div class="container">
-        <div class="title">
-            <h1>Tasks</h1>
+        <div class="container-data">
+            <div class="date" id="date"></div>
+            <h3>Hola, Agustin Haag</h3>
+            <p class="frase">Vamos a cumplir tus metas!</p>
         </div>
         <form action="" id="form">
+          <div class="container-input"> 
             <input type="hidden" id="id" value="">
-            <input name="text" placeholder="Ingrese su tarea" type="text" id="text">
-            <button type="submit" id="btn">Guardar</button><br>
-            <small id="error-msg" style="display:none; color:red;">El campo no puede estar vacío</small>
+            <input class="text" autocomplete="off" name="text" placeholder="Ingrese su tarea" type="text" id="text">
+            <button type="submit" id="btn"><i class="fa-solid fa-circle-plus"></i></button>
+          </div>   
+          <small id="error-msg" style="display:none; color:red; margin-top: 5px;">El campo no puede estar vacío</small>
         </form>
         <table>
             <tbody id="tabla">
